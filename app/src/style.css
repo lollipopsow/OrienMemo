@@ -691,4 +691,139 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+.index-btns {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 0 20px;
+  height: 100vh;
+}
+.index-btns button:not(.modal-close), .index-btns a {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 15px 20px;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  width: 150px;
+}
+.index-btns a {
+  background: #eee;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.7);
+  left: 0;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+  z-index: 10;
+}
+.modal-close {
+  color: #fff;
+  display: block;
+  font-size: 40px;
+  margin-left: auto;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 100;
+}
+.modal__inner {
+  background: white;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+  padding: 40px;
+}
+.modal__inner .ttl {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+.modal__inner .time {
+  text-align: right;
+}
+.modal__inner .cat__ttl {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  max-width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.modal__inner .item__wrap {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 70%;
+}
+.modal__inner .item__wrap + .item__wrap {
+  margin-top: 20px;
+}
+.modal__inner .item__wrap.overview {
+  align-items: center;
+}
+.modal__inner .item__wrap.overview .item__ttl {
+  width: 10em;
+}
+.modal__inner .item__wrap.overview .item__item {
+  width: calc(100% - (10em + 10px));
+}
+.modal__inner .item__wrap.data {
+  align-items: center;
+}
+.modal__inner .item__wrap.data .item__ttl, .modal__inner .item__wrap.data .item__item {
+  width: 50%;
+}
+.modal__inner .item__wrap.question {
+  flex-direction: column;
+  align-items: center;
+}
+.modal__inner .item__wrap.question .item__ttl, .modal__inner .item__wrap.question .item__item {
+  width: 100%;
+}
+.modal__inner .item__item ul {
+  align-items: center;
+  display: flex;
+  gap: 0 20px;
+}
+.modal__inner input, .modal__inner textarea {
+  border: 1px solid gray;
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+}
+.modal__inner label {
+  display: flex;
+}
+.modal__inner label input {
+  margin-right: 10px;
+  width: auto;
+}
+.modal__inner button {
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  outline: none;
+  padding: 5px 10px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 150px;
+}
+.modal__inner hr {
+  border-top: 1px solid gray;
+  margin-top: 40px;
+  margin: 40px;
+}
+
 /*# sourceMappingURL=style.css.map */
